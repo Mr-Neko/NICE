@@ -1,6 +1,6 @@
 # NICE: Improving Panoptic Narrative Detection and Segmentation with Cascading Collaborative Learning
 The offical implementation of "NICE: Improving Panoptic Narrative Detection and Segmentation with Cascading Collaborative Learning".
-# What is NICE?
+## What is NICE?
 NICE is a multi-task collaborative cascaded framework for Panoptic Narrative Segmentation and Panoptic Narrative Detection (Visual Grounding). It introduces a novel insight that is "mask first and box next".
 <div align=center><img src="definition.png"/></div>
 
@@ -48,7 +48,7 @@ panoptic_narrative_grounding
    |_ panoptic_val2017.json
 ```
 
-## Pretrained Bert Model and PFPN
+### Pretrained Bert Model and PFPN
 The pre-trained checkpoint can be downloaded from [here](https://drive.google.com/drive/folders/1xrJmbBJ35M4O1SNyzb9ZTsvlYrwmkAph?usp=drive_link), and the folder should be like:
 ```
 pretrained_models
@@ -61,11 +61,11 @@ pretrained_models
 |  |_bert-base-uncased.txt
 ```
 
-## Train and Inference
+### Train and Inference
 Modify the routes in [train_net.sh](train_net.sh) according to your local paths. If you want to only test the pretrained model, add `--ckpt_path ${PRETRAINED_MODEL_PATH}` and `--test_only`.
 
-## Customized
+### Customized
 You can try to only train the PND task (visual grounding) with ignore the output of masks. We provide the Flickr30K Entries to test the PND task only. You can check the [train_net_flickr.py](train_net_flickr.py) and replace it on the [main.py](main.py) to adapt the PND task. 
 For dataset, you can download the Flickr30K annotations from [here](https://drive.google.com/file/d/19qJ8b5sxijKmtN0XG9leWbt2sPkIVqlc/view) and the image from the [offical](http://hockenmaier.cs.illinois.edu/DenotationGraph/).
-# Acknowledge
+## Acknowledge
 Some of the codes are built upon [K-Net](https://github.com/ZwwWayne/K-Net) and [PNG](https://github.com/BCV-Uniandes/PNG). Thanks them for their great works!
