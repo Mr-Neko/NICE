@@ -1,3 +1,7 @@
+# NICE: Improving Panoptic Narrative Detection and Segmentation with Cascading Collaborative Learning
+The offical implementation of "NICE: Improving Panoptic Narrative Detection and Segmentation with Cascading Collaborative Learning".
+# What is NICE?
+NICE is a multi-task collaborative cascaded framework for Panoptic Narrative Segmentation and Panoptic Narrative Detection (Visual Grounding). It introduces a novel insight that is "mask first and box next".
 
 ## Installation
 
