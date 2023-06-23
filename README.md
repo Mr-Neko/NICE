@@ -1,5 +1,7 @@
 # NICE: Improving Panoptic Narrative Detection and Segmentation with Cascading Collaborative Learning
 The offical implementation of "NICE: Improving Panoptic Narrative Detection and Segmentation with Cascading Collaborative Learning".
+## News
+- [6/23] 🔥 We released the checkpoint trained on [PNG](https://drive.google.com/file/d/1zWMtdvXsw7-mO2Y9863Wsi77FSjfUyfl/view?usp=drive_link) and [Flickr30K Entites](https://drive.google.com/file/d/19_nZce0m1vm2k_fIAkNjM5zS8_Vf9_h6/view?usp=drive_link). Please see documentations.
 ## What is NICE?
 NICE is a multi-task collaborative cascaded framework for Panoptic Narrative Segmentation and Panoptic Narrative Detection (Visual Grounding). It introduces a novel insight that is "mask first and box next".
 <div align=center><img src="definition.png"/></div>
@@ -67,6 +69,8 @@ pretrained_models
 
 ### Train and Inference
 Modify the routes in [train_net.sh](train_net.sh) according to your local paths. If you want to only test the pretrained model, add `--ckpt_path ${PRETRAINED_MODEL_PATH}` and `--test_only`.
+
+The checkpoint trained on [PNG](https://drive.google.com/file/d/1zWMtdvXsw7-mO2Y9863Wsi77FSjfUyfl/view?usp=drive_link) and [Flickr30K Entites](https://drive.google.com/file/d/19_nZce0m1vm2k_fIAkNjM5zS8_Vf9_h6/view?usp=drive_link) is released, you can download it and test it!
 
 ### Customized
 You can try to only train the PND task (visual grounding) with ignore the output of masks. We provide the Flickr30K Entries to test the PND task only. You can check the [train_net_flickr.py](train_net_flickr.py) and replace it on the [main.py](main.py) to adapt the PND task. 
